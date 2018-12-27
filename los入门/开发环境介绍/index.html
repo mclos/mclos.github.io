@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lp">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>开发环境介绍 - mclos</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">mclos</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">los入门 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../los环境搭建/">los搭建环境</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">开发环境介绍</a>
+</li>
+                                    
+<li >
+    <a href="../新建工程/">新建工程</a>
+</li>
+                                    
+<li >
+    <a href="../嵌入式demo/">嵌入式demo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他教程 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../其他教程/eclipse插件安装/">eclipse插件安装</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../捐助支持/">捐助支持</a>
+                            </li>
+                            <li >
+                                <a href="../../FAQ/">FAQ</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">feature <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../feature/description/">description</a>
+</li>
+                                    
+<li >
+    <a href="../../feature/license/">license</a>
+</li>
+                                    
+<li >
+    <a href="../../feature/copyright/">copyright</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../license/">license</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../los环境搭建/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../新建工程/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#loside">los开发使用的ide</a></li>
+        <li class="main "><a href="#eclispe">eclispe的工具栏</a></li>
+        <li class="main "><a href="#losshell">losshell</a></li>
+        <li class="main "><a href="#lgui">新建lgui界面的文件</a></li>
+        <li class="main "><a href="#lgui_1">打开lgui界面的文件</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h4 id="loside">los开发使用的ide</h4>
+<ol>
+<li>是基于eclipse开发的。</li>
+<li>本文只介绍专为los开发的功能。</li>
+</ol>
+<h4 id="eclispe">eclispe的工具栏</h4>
+<ul>
+<li><img alt="device" src="../img/device.png" />图标按钮是获取los设备文件。</li>
+<li><img alt="device" src="../img/pack.png" />图标按钮是将编译好的工程打包或打包文件系统。</li>
+<li><img alt="device" src="../img/down_all.png" />图标按钮是下载编译好的文件到los的usb设备。（所有文件重新下载）.</li>
+<li><img alt="device" src="../img/down.png" />图标按钮是只下载los文件.</li>
+<li><img alt="device" src="../img/down_no.png" />图标按钮是下载los文件，以及los设备上不存在的文件。</li>
+<li><img alt="device" src="../img/run.png" />图标按钮是pc端运行los文件。</li>
+<li><img alt="device" src="../img/los2ascii.png" />图标按钮是将当前项目的los文件转换为数组文件。(第一次转换完成后，请在Dubeg文件夹上右键刷新).</li>
+<li><img alt="device" src="../img/copy2losfat.png" />图标按钮是将当前项目注册到pc上.</li>
+<li><img alt="device" src="../img/losshell.png" />图标按钮是在当前项目的los路径打开losshell.</li>
+<li><img alt="device" src="../img/los_site.png" />图标按钮是设置los.</li>
+</ul>
+<h4 id="losshell">losshell</h4>
+<ol>
+<li>losshell是管理los的工具。</li>
+<li>使用前请先输入‘h’或‘help’命令。</li>
+<li><strong>注意</strong> 使用losshell前必须先安装eclipse TM插件。</li>
+</ol>
+<h4 id="lgui">新建lgui界面的文件</h4>
+<ol>
+<li>点击<strong>[File]</strong> -&gt; <strong>[New]</strong> -&gt; <strong>[Other]</strong> -&gt; <strong>[lgui文件]</strong> -&gt; <strong>[Next]</strong></li>
+<li>输出文件名字，以及lcd大小的参数，点击<strong>Flash</strong></li>
+<li>在刚新建的文件上右键，<strong>[Open With]</strong> -&gt; <strong>[lgui编辑器]</strong></li>
+<li>点击弹出窗口的下方<strong>[lgui desige]</strong></li>
+</ol>
+<h4 id="lgui_1">打开lgui界面的文件</h4>
+<ol>
+<li>在选中文件上右键 <strong>[Open With]</strong> -&gt; <strong>[lgui编辑器]</strong></li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
