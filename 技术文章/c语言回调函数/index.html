@@ -7,11 +7,11 @@
         
         <meta name="author" content="lp">
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>los迷你版教程 - mclos</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>c语言回调函数 - mclos</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="..">mclos</a>
+                    <a class="navbar-brand" href="../..">mclos</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,56 +47,56 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="..">Home</a>
+                                <a href="../..">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">los入门 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../los入门/los环境搭建/">los搭建环境</a>
+    <a href="../../los入门/los环境搭建/">los搭建环境</a>
 </li>
                                     
 <li >
-    <a href="../los入门/开发环境介绍/">开发环境介绍</a>
+    <a href="../../los入门/开发环境介绍/">开发环境介绍</a>
 </li>
                                     
 <li >
-    <a href="../los入门/新建工程/">新建工程</a>
+    <a href="../../los入门/新建工程/">新建工程</a>
 </li>
                                     
 <li >
-    <a href="../los入门/嵌入式demo/">嵌入式demo</a>
+    <a href="../../los入门/嵌入式demo/">嵌入式demo</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="active">
-                                <a href="./">los迷你版教程</a>
+                            <li >
+                                <a href="../../los迷你版教程/">los迷你版教程</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">技术文章 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../技术文章/eclipse插件安装/">eclipse插件安装</a>
+    <a href="../eclipse插件安装/">eclipse插件安装</a>
 </li>
                                     
-<li >
-    <a href="../技术文章/c语言回调函数/">c语言回调函数</a>
+<li class="active">
+    <a href="./">c语言回调函数</a>
 </li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="../捐助支持/">捐助支持</a>
+                                <a href="../../捐助支持/">捐助支持</a>
                             </li>
                             <li >
-                                <a href="../下载/">下载</a>
+                                <a href="../../下载/">下载</a>
                             </li>
                             <li >
-                                <a href="../FAQ/">FAQ</a>
+                                <a href="../../FAQ/">FAQ</a>
                             </li>
                             <li >
-                                <a href="../license/">license</a>
+                                <a href="../../license/">license</a>
                             </li>
                         </ul>
 
@@ -107,12 +107,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../los入门/嵌入式demo/">
+                                <a rel="next" href="../eclipse插件安装/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../技术文章/eclipse插件安装/">
+                                <a rel="prev" href="../../捐助支持/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -124,47 +124,83 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#los-mini">迷你版本(los-mini文件夹内)</a></li>
-        <li class="main "><a href="#cppexamplec">迷你版本cpp脚本(example/c++文件夹内)</a></li>
-            <li><a href="#_1">运行说明</a></li>
-            <li><a href="#api">api说明:</a></li>
-            <li><a href="#_2">移植说明</a></li>
-            <li><a href="#_3">运行过程</a></li>
+        <li class="main active"><a href="#1">1、 前言</a></li>
+        <li class="main "><a href="#_1">这是代码运行结果</a></li>
+        <li class="main "><a href="#_2">作用</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="los-mini">迷你版本(los-mini文件夹内)</h3>
-<h3 id="cppexamplec">迷你版本cpp脚本(example/c++文件夹内)</h3>
-<h5 id="_1">运行说明</h5>
-<ol>
-<li>将bin文件添加到系统环境,进入los-mini文件夹内</li>
-<li>执行clang编译:<code>clang -c test.c</code>
-    与<code>losld -o test test.o</code>,生成test.los文件，将test.los文件转换为test[]数组</li>
-<li>在los-mini文件夹下，输入make命令，生成los.exe文件。运行观看结果</li>
-</ol>
-<h5 id="api">api说明:</h5>
-<p>1.mini版本los，只有以下api：具体使用请看los.h文件内注释,以及参考test.c main.c</p>
-<pre><code>uint32_t los_quit(losc_t *lp);
-void los_arg_clear(losc_t *lp);
-uint32_t los_push_arg(losc_t *lp, uint32_t arg);
-uint32_t los_call_addr(losc_t *lp, uint32_t addr);
-void los_set_function(fun_os f);
-uint32_t los_app_first(uint8_t *addr);
+<h3 id="1">1、 前言</h3>
+<p>本教程是讲述 c 语言或其他语言中，回调函数的使用方法，如有描述错误请
+指出。<br />
+笔者认为回调函数的作用是令代码可以分层使代码便于阅读，也利于多人合
+作编程。回调函数好处很多但缺点是增加一点内存与减低一点代码效率，但对于
+这些损失与使用回调函数所带来的好处前者可以忽略不计了。
+下面我们来看一下怎样写回调函数.<br />
+* 1.先定义回调函数的函数格式</p>
+<pre><code>typedef void (*cb)(int msg,int line);
 </code></pre>
 
-<h4 id="_2">移植说明</h4>
-<ol>
-<li>需要把los.h的内存管理函数实现</li>
-</ol>
-<pre><code>#define lpram_malloc malloc
-#define lpram_free free
+<ul>
+<li>2.然后是回调函数实体
+//这是底层出错了，就回调这函数</li>
+</ul>
+<pre><code>void err_cb(int msg,int line)
+{
+printf(&quot;err_line=%d,msg=%d\n&quot;,line,msg);
+}
 </code></pre>
 
-<h4 id="_3">运行过程</h4>
-<ol>
-<li><img alt="test-run" src="../img/test-run.jpg" /></li>
-</ol></div>
+<ul>
+<li>3.主函数是：</li>
+</ul>
+<pre><code>int main(int argc, char *argv[])
+{
+int i=0;
+printf(&quot;LP电子之回调函数教程\n&quot;);
+//先注册回调函数（ 告诉底层如出现错误就调用这个函数）
+callbreak_init(err_cb);
+for(i=1;i&lt;10;i++)
+{
+sun(i);
+}
+return 0;
+}
+</code></pre>
+
+<ul>
+<li>4.以下代码我们可以新建一个文件，现用于展示就放在同一文件内</li>
+</ul>
+<pre><code>cb cb_err; //这是记录上层代码注册的函数
+void callbreak_init(cb cbfun)//注册回调函数
+{
+cb_err=cbfun;
+}
+</code></pre>
+
+<p>//这是上层代码调用的函数
+//函数是以奇数为正常, 偶数为异常输入，然后告知上层出错了</p>
+<pre><code>void sun(int x)
+{
+if(x%2) //奇数为正常
+{
+    printf(&quot;sun=%d\n&quot;,x);
+}
+else //偶数为异常输入
+{
+    cb_err(__LINE__,x); //触发上层回调 ，并告知在那一行出错的
+}
+}
+</code></pre>
+
+<h3 id="_1">这是代码运行结果</h3>
+<p><img alt="" src="../img/callback.jpg" /></p>
+<h3 id="_2">作用</h3>
+<p>以上代码例子，说明回调函数主要是在编写代码过程中先注册一个函数给底层，就是告诉底层如有什么事，就通过这个函数告诉我，对于对于多人合作或代码分层设计代码结构的 好处是，大家并一定要事先约定一定函数名字是什么，上层只需要告知底层出问题了或通知 什么就回调事先注册的函数。<br />
+  若以上代码，不使用回调函数的话，那底层与上层函数就需要一起用这个函数了 void err_cb(int msg,int line)，但使用了回调函数 cb_err;，那上层与底层就各自命名函数名字了，便于多人合作编程。<br />
+另：上述代码中的__LINE__的意思有“当前代码的行数”，若底层有很多 cb_err;的调用，那我们就很方便找出到底是哪一行的回调函数了。<br />
+[END]</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -172,11 +208,11 @@ uint32_t los_app_first(uint8_t *addr);
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
